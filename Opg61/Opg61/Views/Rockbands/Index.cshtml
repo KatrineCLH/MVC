@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Great Rockbands </h1>
+        <ul>
+            @foreach (string band in ViewBag.rockbands)
+            {
+                <li>@band</li>
+
+            }
+        </ul>
+    </div>
+</body>
+</html>

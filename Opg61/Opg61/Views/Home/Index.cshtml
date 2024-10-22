@@ -1,0 +1,33 @@
+﻿@model Opg61.Models.HomeModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        Halløj i ViewBag-hytten
+        <br />
+        Navn: @ViewBag.name
+        <br />
+        Alder: @ViewBag.age
+        <br />
+        Fødselsdag: @ViewBag.birthday
+        <br />
+        <br />
+        Halløj i model-hytten
+        <br />
+        Navn: @Model.Name
+        <br />
+        Alder: @Model.Age
+        <br />
+        Fødselsdag: @Model.Birthday
+    </div>
+</body>
+</html>
