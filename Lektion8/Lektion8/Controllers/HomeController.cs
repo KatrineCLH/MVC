@@ -13,6 +13,26 @@ namespace Lektion8.Controllers
             return View();
         }
 
+        public ActionResult Sale()
+        {
+            return View();
+        }
+
+        public ActionResult MoreSales()
+        {
+            return View();
+        }
+
+        public ActionResult Buy()
+        {
+            return View();
+        }
+
+        public ActionResult BuyAndSell()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

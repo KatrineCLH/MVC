@@ -177,6 +177,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Sale.cshtml" />
+    <Content Include="Views\Home\MoreSales.cshtml" />
+    <Content Include="Views\Home\Buy.cshtml" />
+    <Content Include="Views\Home\BuyAndSell.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
