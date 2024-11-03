@@ -1,0 +1,34 @@
+﻿@using Lesson02_Startup.Models
+@model List<Person>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @foreach (Person p in Model)
+        {
+            <p>
+                @p.FirstName @p.LastName (@p.Age år) <br />
+                @p.Address <br />
+                @p.Zip @p.City
+            </p>
+        }
+
+        @foreach (Person p in Model)
+            {
+                <p>
+                    @p.FirstName @p.LastName (@string.Join(", ", p.PhoneNumbers)) <br />
+                </p>
+            }
+    </div>
+</body>
+</html>

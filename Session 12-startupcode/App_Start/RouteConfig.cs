@@ -13,7 +13,7 @@ namespace Lesson02_Startup {
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Exercise01", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Exercise02", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

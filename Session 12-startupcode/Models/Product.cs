@@ -31,8 +31,7 @@ public class Product
     private string imageUrl; // field
     public string ImageUrl // property
     {
-        get { return imageUrl; }
-        set { imageUrl = value; }
+        get; set;
     }
 
     private string manufacturer; // field
