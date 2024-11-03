@@ -8,7 +8,7 @@ namespace Lektion7.Controllers
 {
     public class Exercise01Controller : Controller
     {
-        public ActionResult Index(string Country)
+        public ActionResult Index(string Countries)
         {
             List<SelectListItem> countries = new List<SelectListItem>();
             countries.Add(new SelectListItem { Text = "China", Value = "CN" });
@@ -17,7 +17,7 @@ namespace Lektion7.Controllers
 
             ViewBag.Countries = countries;
             ViewBag.Title = "Countries";
-            ViewBag.CountryCode = Country;
+            ViewBag.CountryCode = Countries;
 
             return View();
         }

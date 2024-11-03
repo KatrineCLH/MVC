@@ -15,11 +15,13 @@
         @using (Html.BeginForm("Index", "Exercise01", FormMethod.Get))
         {
             @Html.DropDownList("Countries")
-            <button type="button"> Show country code </button>
-            if (ViewBag.CountryCode != null)
-            {<strong>Country code: </strong>@ViewBag.CountryCode
+            <button type="submit"> Show country code </button>
         }
+        @if (ViewBag.CountryCode != null)
+        {
+            <div><p><strong>Country code: </strong>@ViewBag.CountryCode</p></div>
         }
+       
 
     </div>
 </body>
