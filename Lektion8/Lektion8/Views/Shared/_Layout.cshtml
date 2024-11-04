@@ -26,9 +26,9 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
-        @RenderSection("SaleSection")
+        @RenderSection("SaleSection", false)
         <br />
-        @RenderSection("BuySection")
+        @RenderSection("BuySection", false)
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
