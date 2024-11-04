@@ -1,0 +1,15 @@
+﻿@using Exercise15_2.Models
+
+@model Person
+
+@{ Person p = Model; }
+@if (p.Efternavn == "Ulsen")
+   {
+            p.Efternavn = "Olsen";
+        }
+        @if (p.Efternavn == "Putin")
+      {
+          p.Efternavn = "Putler";
+      }
+
+@(Model.Fornavn + " _ " + Model.Efternavn)
