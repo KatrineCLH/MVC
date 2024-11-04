@@ -16,12 +16,35 @@
         {
             @Html.DropDownList("Countries")
             <button type="submit"> Show country code </button>
+            if (ViewBag.CountryCode != null)
+            {
+                <p><strong>Country code: </strong>@ViewBag.CountryCode</p>
+            }
+            else
+            {
+                <p> : </p>
+            }
         }
-        @if (ViewBag.CountryCode != null)
+        @using (Html.BeginForm("Index", "Exercise01"))
         {
-            <div><p><strong>Country code: </strong>@ViewBag.CountryCode</p></div>
+            <table>
+                <tr>
+                    <td>@Html.Label("Country")</td>
+                    <td>@Html.TextBox("Country")</td>
+                </tr>
+                <tr>
+                    <td>@Html.Label("Code")</td>
+                    <td>@Html.TextBox("Code")</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit"> Add </button></td>
+                </tr>
+            </table>
+            
         }
-       
+
+
 
     </div>
 </body>
