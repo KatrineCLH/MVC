@@ -47,6 +47,17 @@ namespace Lektion8.Controllers
             return View(AllePersoner()[0]);
         }
 
+        [ChildActionOnly]
+        public ActionResult VisEnPerson(Person p)
+        {
+            if (p.FirstName.Equals("Ulf"))
+            {
+                p.LastName = "Ulfesen";
+            }
+
+            return PartialView("_VisEnPerson", p);
+        }
+
         private List<Person> AllePersoner()
         {
             Person ulf = new Person("Ulf", "Pilgaard");

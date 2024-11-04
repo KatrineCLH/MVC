@@ -12,7 +12,9 @@
     <title>VisEn</title>
 </head>
 <body>
-    <div> 
+    <div>
+        @*Html.Partial("_VisEnPerson")*@
+        @Html.Action("VisEnPerson", new { P = @Model })
     </div>
 </body>
 </html>

@@ -18,8 +18,8 @@
         @foreach (Person p in Model)
             {
                 <li>
-                    @p.FirstName
-                    @p.LastName
+                    @*Html.Partial("_VisEnPerson", p)*@
+                    @Html.Action("VisEnPerson", new { P = p })
                 </li>
             }
         </ul>
